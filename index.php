@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Paradise Kashmir Travels</title>
+<title>Pinecrest Kashmir Travels</title>
 
 <style>
 
@@ -455,6 +455,111 @@ html{
   box-sizing:border-box;
 }
 
+/* ================= MOBILE (0 - 768px) ================= */
+@media (max-width:768px){
+
+/* NAV */
+.nav{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+}
+
+.menu{
+flex-wrap:wrap;
+gap:10px;
+}
+
+/* HERO IMAGE */
+.hero img{
+height:300px;
+}
+
+/* 🔥 TABS (FIXED POSITION - UPPER THAN SEARCH) */
+.tabs{
+left:20px;
+bottom:270px; /* ✅ UPDATED (pehle 140px tha) */
+flex-wrap:wrap;
+}
+
+.tabs button{
+padding:8px 12px;
+font-size:13px;
+}
+
+/* SEARCH BOX */
+.search{
+flex-direction:column;
+left:20px;
+right:20px;
+bottom:20px;
+}
+
+/* GUEST BOX */
+.guest-box{
+left:20px;
+right:20px;
+top:auto;
+bottom:90px;
+width:auto;
+}
+
+/* GRID FIX */
+.grid{
+flex-direction:column;
+align-items:center;
+}
+
+.box{
+width:90% !important;
+}
+
+/* HOTEL + CAR */
+.hsection .box,
+.csection .box{
+width:90% !important;
+}
+
+/* ABOUT */
+.about-section{
+flex-direction:column;
+padding:20px;
+}
+
+/* FOOTER */
+.footer-container{
+flex-direction:column;
+gap:20px;
+}
+
+}
+
+
+/* ================= TABLET (769px - 1024px) ================= */
+@media (max-width:1024px){
+
+  .hsection .box,
+  .csection .box{
+    width:45%;
+  }
+
+  .grid{
+    justify-content:center;
+  }
+
+}
+
+
+/* ================= SMALL LAPTOP (1025px - 1280px) ================= */
+@media (max-width:1280px){
+
+  .hsection .box,
+  .csection .box{
+    width:30%;
+  }
+
+}
+
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -475,7 +580,7 @@ html{
 
 <div class="logo">
 <img src="logo.png" height="45">
-<span>Paradise Kashmir Travels</span>
+<span>Pinecrest Kashmir Travels</span>
 </div>
 
 <div class="menu">
@@ -503,7 +608,6 @@ html{
 
 <p onclick="location='dashboard.php'">Dashboard</p>
 <p onclick="location='profile.php'">Your Profile</p>
-<p>Wishlist</p>
 
 <?php } else if($_SESSION['role'] == 'partner'){ ?>
 
@@ -666,7 +770,7 @@ html{
   <div class="about-card left">
     <h2>About Us</h2>
     <p>
-      Paradise Kashmir Travels is dedicated to providing the best travel experience across Kashmir.
+      Pinecrest Kashmir Travels is dedicated to providing the best travel experience across Kashmir.
       We offer reliable hotel bookings, comfortable car rentals, and complete tour packages.
       Our goal is to make your journey smooth, memorable, and completely hassle-free.
     </p>
@@ -704,8 +808,8 @@ html{
 <h3>Policies</h3>
 
 <p onclick="location='tc.html'" style="cursor:pointer;">Terms and Conditions</p>
-<p onclick="location='pp.html'" style="cursor:pointer;">Privacy Policy</p>
-<p onclick="location='prp.html'" style="cursor:pointer;">Payment and Refund Policy</p>
+<p onclick="location='tc.html'" style="cursor:pointer;">Privacy Policy</p>
+<p onclick="location='tc.html'" style="cursor:pointer;">Payment and Refund Policy</p>
 
 </div>
 
@@ -731,7 +835,7 @@ YouTube
 
 </div>
 
-<p style="margin-top:20px;">© 2026 Paradise Kashmir Travels</p>
+<p style="margin-top:20px;">© 2026 Pinecrest Kashmir Travels</p>
 
 </div>
 
