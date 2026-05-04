@@ -4,6 +4,8 @@
 <head>
 <title>Pinecrest Kashmir Travels</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 
 body{
@@ -579,7 +581,7 @@ gap:20px;
 <div class="nav">
 
 <div class="logo">
-<img src="logo.png" height="45">
+<img src="Logo.png" height="45">
 <span>Pinecrest Kashmir Travels</span>
 </div>
 
